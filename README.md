@@ -14,7 +14,7 @@ only-one react react-dom
 ```
 
 If none or more than one version of the deps are found the process will exit
-with failure. The tool works by [globbing](https://en.wikipedia.org/wiki/Glob_(programming) your
+with failure. The tool works by [globbing](https://en.wikipedia.org/wiki/Glob_(programming)) your
 node_modules, it has nothing to do with yarn or npm lock files and therefore checks that yarn or npm
 is also correctly installing into node_modules.
 
@@ -26,7 +26,7 @@ react as a dependency and this can break stuff.
 Please be aware if you have a large node_modules it can be quite slow because it's a lot of file
 paths to search through.
 
-### To installing
+### To install
 
 ```bash
 npm install only-one --save-dev
