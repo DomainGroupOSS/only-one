@@ -1,0 +1,30 @@
+{
+  "name": "only-one",
+  "version": "0.0.1",
+  "description": "CLI tool for checking you have one version of a dependency in node_modules",
+  "bin": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertstill/only-one.git"
+  },
+  "author": "Albert Still <albertjamesstill@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albertstill/only-one/issues"
+  },
+  "homepage": "https://github.com/albertstill/only-one#readme",
+  "dependencies": {
+    "fast-glob": "^2.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "engines": {
+    "node": ">=6.16.0"
+  }
+}
