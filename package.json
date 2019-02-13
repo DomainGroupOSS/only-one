@@ -1,6 +1,6 @@
 {
   "name": "only-one",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CLI tool for checking you have one version of a dependency in node_modules",
   "bin": "index.js",
   "scripts": {
