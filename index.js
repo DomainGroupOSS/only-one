@@ -5,11 +5,11 @@ const glob = require('fast-glob');
 const deps = process.argv.slice(2);
 
 if (!deps.length) {
-  console.log('No deps passed to only-one, must be like "only-one react react-dom"!');
+  console.log('No deps passed to only-one, must be a list of space separated deps "only-one react react-dom"!');
   process.exit(1);
 }
 
-// cwd defaults to process.cwd()
+// cwd defaults to process.cwd() in fast-glob
 const globPattern = path.join('node_modules', '**', `(${deps.join('|')})`, 'package.json');
 const foundPaths = glob.sync(globPattern);
 
@@ -17,7 +17,6 @@ const resultsMap = new Map();
 
 deps.forEach((dep) => {
   const foundLocations = foundPaths.filter(packageJsonPath => packageJsonPath.endsWith(path.join(dep, 'package.json')));
-
   resultsMap.set(dep, foundLocations);
 });
 
