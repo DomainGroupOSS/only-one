@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albertstill/only-one.git"
+    "url": "git+https://github.com/DomainGroupOSS/only-one.git"
   },
   "author": "Albert Still <albertjamesstill@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/albertstill/only-one/issues"
+    "url": "https://github.com/DomainGroupOSS/only-one/issues"
   },
-  "homepage": "https://github.com/albertstill/only-one#readme",
+  "homepage": "https://github.com/DomainGroupOSS/only-one#readme",
   "dependencies": {
     "fast-glob": "^2.2.6"
   },
