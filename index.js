@@ -5,7 +5,9 @@ const glob = require('fast-glob');
 const deps = process.argv.slice(2);
 
 if (!deps.length) {
-  console.log('No deps passed to only-one, must be a list of space separated deps "only-one react react-dom"!');
+  console.log(
+    'No deps passed to only-one, must be a list of space separated deps "only-one react react-dom"!',
+  );
   process.exit(1);
 }
 
@@ -16,7 +18,10 @@ const foundPaths = glob.sync(globPattern);
 const resultsMap = new Map();
 
 deps.forEach((dep) => {
-  const foundLocations = foundPaths.filter(packageJsonPath => packageJsonPath.endsWith(path.join(dep, 'package.json')));
+  const foundLocations = foundPaths.filter(
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    packageJsonPath => require(path.join(process.cwd(), packageJsonPath)).name === dep,
+  );
   resultsMap.set(dep, foundLocations);
 });
 
