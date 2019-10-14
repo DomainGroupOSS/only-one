@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/DomainGroupOSS/only-one#readme",
   "dependencies": {
-    "fast-glob": "^2.2.6"
+    "fast-glob": "^2.2.7"
   },
   "devDependencies": {
-    "eslint": "^5.13.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
   },
   "engines": {
     "node": ">=6.16.0"
